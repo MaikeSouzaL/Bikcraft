@@ -22,7 +22,7 @@
   padding-bottom: 160px;
 }
 .tecnologia-conteudo span {
-  display: block;
+  display: inline-block;
   margin-bottom: 20px;
 }
 .tecnologia-conteudo h2 {
@@ -67,5 +67,8 @@
 @media (max-width: 600px) {
   .tecnologia-vantagens {
     flex-direction: column;
+  }
+  .tecnologia-conteudo h2 {
+    font-size: 2rem;
   }
 }

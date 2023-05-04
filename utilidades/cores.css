@@ -20,6 +20,9 @@
 .cor-p1 {
   color: var(--corp1);
 }
+.cor-p5{
+  color: var(--cor);
+}
 .cor5 {
   color: var(--cor5);
 }

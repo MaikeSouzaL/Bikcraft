@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap");
+
 @import "../global/global.css";
 @import "../global/header.css";
 @import "../utilidades/cores.css";
@@ -6,6 +8,7 @@
 
 /*Utilidades*/
 @import "../utilidades/componentes.css";
+@import "../utilidades/tipografia.css";
 
 /* Home*/
 @import "../home/introducao.css";
@@ -14,3 +17,6 @@
 
 /*Bicicletas*/
 @import "../bicicletas/bicicletas-lista.css";
+
+/*depoimentos*/
+@import "../home/depoimento.css";
