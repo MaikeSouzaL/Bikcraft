@@ -44,23 +44,23 @@
     padding-bottom: 30px;
     text-align: center;
   }
-  .footer-bg{
+  .footer-bg {
     padding: 0;
   }
-  .footer-contato{
+  .footer-contato {
     grid-column: 1;
     padding-left: 10px;
   }
   .footer-img > img {
     display: none;
   }
-  .footer-redes{
+  .footer-redes {
     justify-content: center;
     grid-column: 1/-1;
   }
 }
-@media(max-width:500px){
-  .footer{
+@media (max-width: 500px) {
+  .footer {
     grid-template-columns: 1fr;
   }
 }
