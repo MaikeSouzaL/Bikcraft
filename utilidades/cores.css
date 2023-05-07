@@ -17,6 +17,9 @@
   --corp4: #664400;
   --corp5: #332200;
 }
+.cor1{
+  color: var(--cor1);
+}
 .cor-p1 {
   color: var(--corp1);
 }
