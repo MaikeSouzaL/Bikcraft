@@ -21,21 +21,20 @@
 .vantagens-conteiner img {
   margin-bottom: 8px;
 }
-@media(max-width:800px){
-  .vantagens-bg{
+@media (max-width: 800px) {
+  .vantagens-bg {
     padding-top: 60px;
     padding-bottom: 60px;
   }
-  .vantagens-conteiner h2{
+  .vantagens-conteiner h2 {
     margin-bottom: 40px;
   }
-  .vantagens-conteiner ul{
+  .vantagens-conteiner ul {
     gap: 20px;
   }
 }
-@media(max-width:500px){
-  .vantagens-conteiner h2{
+@media (max-width: 500px) {
+  .vantagens-conteiner h2 {
     font-size: 2rem;
-  }
   }
 }
