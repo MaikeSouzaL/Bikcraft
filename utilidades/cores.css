@@ -17,23 +17,26 @@
   --corp4: #664400;
   --corp5: #332200;
 }
-.cor1{
+.cor1 {
   color: var(--cor1);
 }
 .cor-p1 {
   color: var(--corp1);
 }
-.cor-p5{
+.cor-p5 {
   color: var(--cor);
 }
 .cor5 {
   color: var(--cor5);
 }
-.cor6{
-color: var(--cor6);
+.cor6 {
+  color: var(--cor6);
 }
-.cor8{
+.cor8 {
   color: var(--cor8);
+}
+.cor9 {
+  color: var(--cor9);
 }
 .cor0 {
   color: var(--cor0);
