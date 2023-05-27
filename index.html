@@ -8,6 +8,7 @@
   <title>Bikcraft - Bicicletas Elétricas</title>
   <meta name="description" content="Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft.">
 
+  <link rel="preload" href="./css/style.css" as="style">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -15,7 +16,7 @@
   <header class="header-bg">
     <div class="header container">
       <a href="./">
-        <img src="./img/bikcraft.svg" alt="Bikcraft">
+        <img src="./img/bikcraft.svg" width="136" height="32" alt="Bikcraft">
       </a>
 
       <nav aria-label="primaria">
@@ -35,9 +36,15 @@
         <p class="font-2-l cor-5">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft.</p>
         <a class="botao" href="./bicicletas.html">Escolha a sua</a>
       </div>
-      <div>
+
+
+      <!--mudança de imagens no media -->
+      <picture">
+        <source src="./img/bicicletas/nimbus.jpg" media="(max-width: 800px)">
         <img src="./img/fotos/introducao.jpg" alt="Bicicleta elétrica preta.">
-      </div>
+      </picture>
+     
+
     </div>
   </main>
 
