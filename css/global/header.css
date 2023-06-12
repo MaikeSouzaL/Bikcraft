@@ -35,7 +35,8 @@
   position: absolute;
 }
 
-.header-menu a:hover:after {
+.header-menu a:hover:after,
+.header-menu a.ativo::after {/*a.ativo esta sendo usada com o java script*/  
   width: 100%;
 }
 
