@@ -37,6 +37,8 @@ function ativarProduto(parametro) {
 }
 parametros.forEach(ativarProduto);
 
+//---------------------------------------------------------------------------------------------------
+
 // PERGUNTAS FREQUENTES
 
 // 1 sempre que queremo smudar alguma ação no html e css lembre-se devemos sempre selecionan o elemento neste caso queremos mudar a ação do elemento ação entao vamos selecionar ele vamos selecionar a classe e depois o que tem dentro
@@ -72,3 +74,87 @@ function eventosPerguntas(pergunta) {
 
 // 2 agora queremons adicionar para cada botao uma ação se eu quero adicionar para cada uma vamos usar o loop usando forEach
 perguntas.forEach(eventosPerguntas); //lembre-se eventosPeguntas aqui é a classe
+
+//-----------------------------------------------------------------------------------------------------
+
+//GALERIA DE BICICLETAS
+// vamos mudar as imagens quando eu clicar nela quero que a imagem muda para a principal
+// 1  primeiro vamos selecionar cada uma das imagens
+const galeria = document.querySelectorAll(".bicicleta-imagens img");
+// 1 agora vamos selecionar onde queremos que ele fique quando eu clicar
+const galeriaContainer = document.querySelector(".bicicleta-imagens");
+
+// 4 criando outra função para trocar imagem
+function trocarImagem(event) {
+  // ecent é sempre o evento pricipal que eu quero que ocorra
+  // sempre devemos selecionar o item que esta sendo clicado no momento
+  const img = event.currentTarget;
+  const mediaQuerry = matchMedia("(min-width: 1000px)").matches; // esta fun~]ap serve para verificar o tamnaho da tela igual o css. Entao se a tela for menos do que 1000px
+  if (mediaQuerry) {
+    // 5 agora vamos modificar no doom queremos que quando clicado mudamos o posicionamento la do html queremos mudar as posiçoes dos img por ordem, e onde vamos adicionar este metodo? no container .bicicleta-imagens
+    galeriaContainer.prepend(img); // .prepend faz a função de modificar a posição dos elementos la do html
+  }
+}
+
+//3 criando a função que ira clicar cada uma das imagens
+function eventosGaleria(img) {
+  img.addEventListener("click", trocarImagem); // adicionando evento de click em outra função
+}
+
+// 2 adicionar um evento de click
+galeria.forEach(eventosGaleria);
+
+//---------------------------------------------------------------------------------------------------
+
+// ANIMAÇÃO
+// 1 - Copie o arquivo simple-anime.js da pasta dist e cole no seu site.
+// 2 - Link o arquivo utilizando a tag script /js/plugins é apenas um exemplo, caso você tenha colocado o arquivo dentro da pasta de plugins
+//<script src="./js/plugins/simple-anime.js"></script>;
+// 3 - Inicie a classe do slide:
+//<!-- 4 Adicione o atributo data-anime ao elemento que
+//deseja animar. Informe o total em milessegundos, que o JavaScript
+//deve esperar até a animação iniciar -->
+
+//<h1 data-anime="500">Título do Site</h1>
+//<p data-anime="1000">Descrição da Página</p>
+//<button data-anime="1500">Clique Aqui</button>
+
+//<!-- 5 Para criar animações diferentes, adicione classes
+//aos elementos que deseja diferenciar. E defina o transform
+//inicial da animação na classe -->
+
+//<h1 data-anime="500" class="fadeInDown">Título do Site</h1>
+//<p data-anime="1000" class="fadeInDown">Descrição da Página</p>
+//<button data-anime="1500">Clique Aqui</button>
+//new SimpleAnime();
+/*
+6 CSS personalizado dependendo da animação desejada
+Devem ser adicionadas na frente do código essencial do item 7.
+*/
+/*.fadeInDown {
+  transform: translate3d(0, -20px, 0);
+}
+.fadeInUp {
+  transform: translate3d(0, 20px, 0);
+}
+.fadeInRight {
+  transform: translate3d(20px, 0, 0);
+}
+.fadeInLeft {
+  transform: translate3d(-20px, 0, 0);
+}
+
+ 7 Adicione o CSS Essencial abaixo 
+[data-anime] {
+  opacity: 0;
+}
+.anime {
+  opacity: 1;
+  transform: none;
+  transition: transform 0.8s, opacity 0.8s;
+}
+*/
+// vamos ativar um plugin para animação
+if (window.SimpleAnime) {
+  new SimpleAnime();
+}
